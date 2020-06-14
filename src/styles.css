@@ -1,8 +1,18 @@
 body {
+  background-color: #000000;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 100;
   color: white;
 }
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+} 
 
 body .bgImg {
   position: absolute;
