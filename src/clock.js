@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const clockDiv = document.querySelector(".js-clock"),
   clockTitle = clockDiv.querySelector("h1");
 
