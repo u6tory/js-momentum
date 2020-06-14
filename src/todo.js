@@ -1,7 +1,3 @@
-// <⚠️ DONT DELETE THIS ⚠️>
-import "./styles.css";
-// <⚠️ /DONT DELETE THIS ⚠️>
-
 const toDoForm = document.querySelector(".js-todo-form"),
   toDoInput = toDoForm.querySelector("input"),
   pending = document.querySelector(".js-pending"),
