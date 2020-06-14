@@ -1,8 +1,18 @@
 body {
+  background-color: #000000;
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 100;
   color: white;
 }
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+} 
 
 body .bgImg {
   position: absolute;
@@ -30,7 +40,7 @@ body .row {
 div#app {
   background-color: hsl(0, 0%, 0%, 0.5);
   padding: 30px;
-  border-radius: 30px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,11 +49,11 @@ div#app {
 h1 {
   font-size: 5rem;
   margin-bottom: 0px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h2 {
-  margin-top: 0px;
+  margin-top: 5px;
   margin-bottom: 0px;
   font-size: 3rem;
   font-weight: 300;
@@ -57,6 +67,7 @@ h2 {
 
 .js-name.showing {
   display: block;
+  animation: fadeIn 0.6s linear; 
 }
 
 .js-name span.namecheck {
@@ -66,11 +77,11 @@ h2 {
 
 .js-name input[type="text"] {
   border: none;
-  /* background-color: black; */
+  background-color: black;
   background-color: hsl(0, 0%, 0%, 0);
   border-bottom: 2px solid white;
   height: 3vh;
-  /* size: 2rem; */
+  size: 2rem;
   font-size: 2vh;
   color: white;
 }
@@ -84,7 +95,7 @@ input:focus::placeholder {
 }
 
 .js-weather {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -142,68 +153,13 @@ h3 {
   align-items: center;
 }
 
-.js-weather {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-.js-weather span {
-  font-size: 1.3rem;
-}
-
-h3 {
-  margin-bottom: 0px;
-  font-size: 2rem;
-  font-weight: 100;
-}
-
-.todo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.js-todo-form input[type="text"] {
-  border: none;
-  /* background-color: black; */
-  background-color: hsl(0, 0%, 0%, 0.2);
-  height: 3vh;
-  /* size: 2rem; */
-  font-size: 2vh;
-  color: white;
-}
-
-.js-todo-list {
-  display: flex;
-}
-
-.js-todo-list ul {
-  list-style: none;
-  padding-inline-start: 0px;
-}
-
-.js-todo-list-div {
-  min-width: 200px;
-}
-
-.js-todo-list-div h4 {
-  margin-bottom: 0px;
-}
-
-.js-todo-list-div ul {
-  min-width: 200px;
-}
-
-.js-todo-list div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.todo button {
+.js-todo-list button {
   background-color: transparent;
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+.js-todo-list li{
+  animation: fadeIn 0.3s linear; 
 }
