@@ -1,0 +1,209 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+body .bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+*:focus {
+  outline: none;
+}
+
+body .row {
+  height: 5vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+div#app {
+  background-color: hsl(0, 0%, 0%, 0.5);
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.js-name.form,
+.js-name.greeting,
+.js-name.namecheck {
+  display: none;
+}
+
+.js-name.showing {
+  display: block;
+}
+
+.js-name span.namecheck {
+  float: right;
+  color: hsl(100, 100%, 100%, 0.4);
+}
+
+.js-name input[type="text"] {
+  border: none;
+  /* background-color: black; */
+  background-color: hsl(0, 0%, 0%, 0);
+  border-bottom: 2px solid white;
+  height: 3vh;
+  /* size: 2rem; */
+  font-size: 2vh;
+  color: white;
+}
+
+.js-name input::placeholder {
+  color: white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.js-weather {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.js-weather span {
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin-bottom: 0px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-todo-form input[type="text"] {
+  border: none;
+  /* background-color: black; */
+  background-color: hsl(0, 0%, 0%, 0.2);
+  height: 3vh;
+  /* size: 2rem; */
+  font-size: 2vh;
+  color: white;
+}
+
+.js-todo-list {
+  display: flex;
+}
+
+.js-todo-list ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.js-todo-list-div {
+  min-width: 200px;
+}
+
+.js-todo-list-div h4 {
+  margin-bottom: 0px;
+}
+
+.js-todo-list-div ul {
+  min-width: 200px;
+}
+
+.js-todo-list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-weather {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.js-weather span {
+  font-size: 1.3rem;
+}
+
+h3 {
+  margin-bottom: 0px;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.js-todo-form input[type="text"] {
+  border: none;
+  /* background-color: black; */
+  background-color: hsl(0, 0%, 0%, 0.2);
+  height: 3vh;
+  /* size: 2rem; */
+  font-size: 2vh;
+  color: white;
+}
+
+.js-todo-list {
+  display: flex;
+}
+
+.js-todo-list ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.js-todo-list-div {
+  min-width: 200px;
+}
+
+.js-todo-list-div h4 {
+  margin-bottom: 0px;
+}
+
+.js-todo-list-div ul {
+  min-width: 200px;
+}
+
+.js-todo-list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

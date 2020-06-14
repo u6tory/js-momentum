@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Momentum</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="row"></div>
+    <div class="container">
+      <div id="app">
+        <div class="js-clock">
+          <h1>00:00:00</h1>
+        </div>
+        <div class="js-name">
+          <h2 class="js-name greeting">Turn on javascript in Browser</h2>
+          <span class="js-name namecheck"></span>
+          <form action="" class="js-name form">
+            <input
+              type="text"
+              placeholder="What is your name?"
+              name="yourname"
+              id="yourname"
+            />
+          </form>
+        </div>
+        <div class="js-weather">
+          <span class="js-weather-today"></span>
+          <span class="js-weather-tomorrow"></span>
+        </div>
+
+        <div class="todo">
+          <h3>Tasks</h3>
+          <form class="js-todo-form">
+            <input type="text" placeholder="Add task" />
+          </form>
+          <div class="js-todo-list">
+            <div class="js-todo-list-div">
+              <h4><i class="far fa-clock"></i> Pending</h4>
+              <ul class="js-pending"></ul>
+            </div>
+            <div class="js-todo-list-div">
+              <h4><i class="far fa-check-square"></i> Finished</h4>
+              <ul class="js-finished"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/clock.js"></script>
+    <script src="src/name.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg-img.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>
